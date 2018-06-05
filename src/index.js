@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/';
 import registerServiceWorker from './registerServiceWorker';
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDOM.render(
+  <BrowserRouter><App /></BrowserRouter>, 
+  document.getElementById('root')
+);
 
 // render a plain text
 //const greeting = React.createElement('h1',{},'Hello world');
